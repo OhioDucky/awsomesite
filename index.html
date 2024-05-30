@@ -52,8 +52,7 @@ const SCREEN_WIDTH = window.screen.availWidth,
     'üstad kadir mısıroğlu kitapları',
     '18 yaşından küçük çocukla cinsel ilişkiye girmenin cezası nedir',
   ],
-  VIDEOS = ['https://erenzy.dev/top_secret_control_panel/leak.mp4'],
-  FILE_DOWNLOADS = ['https://erenzy.dev/top_secret_control_panel/leak.exe', 'https://erenzy.dev/top_secret_control_panel/aaaaaa.jpg', 'https://erenzy.dev/top_secret_control_panel/novasi.jpg'],
+  
   PHRASES = [
     'Bedava Panel Bedava Panel Bedava Panel',
     'Suriyeli İşkence Etmek İstermisin',
@@ -178,9 +177,8 @@ function initChildWindow() {
   registerProtocolHandlers()
   hideCursor()
   moveWindowBounce()
-  startVideo()
+
   detectWindowClose()
-  triggerFileDownload()
   speak()
   rainbowThemeColor()
   animateUrlWithEmojis()
@@ -198,7 +196,7 @@ function initParentWindow() {
       (registerProtocolHandlers(),
       attemptToTakeoverReferrerWindow(),
       hideCursor(),
-      startVideo(),
+    
       startAlertInterval(),
       superLogout(),
       removeHelloMessage(),
